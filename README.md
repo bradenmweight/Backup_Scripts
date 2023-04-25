@@ -1,6 +1,6 @@
 # Backing up to Box with rclone
 
-# Primary setup website -- Repeated Here
+### Primary setup website -- Repeated Here
 https://rclone.org/box/
 
 To modify/initialize/control your rclone remote sites:
@@ -61,7 +61,7 @@ y/e/d> y
 4. To sync from BlueHive to Box -- \
 ```$ rclone sync /path/to/local/files/* Braden_Box:path/to/Box/location/``` 
 
-5. To sync from BlueHive to Box -- \
+5. To sync from BlueHive to Box (only keeping file sunder 5 MB) -- \
 ```rclone sync /scratch/bweight/ Braden_Box:Huo_Lab/Braden_Weight/scratch/ --max-size 5M```
 
 ## Submitting a sync job to the cluster via SLURM
