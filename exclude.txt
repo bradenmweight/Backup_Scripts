@@ -1,0 +1,5 @@
+anaconda3/*
+*cube
+Gau*
+*chk
+*npy
