@@ -1,0 +1,7 @@
+
+Tue Apr 25 18:36:00 EDT 2023
+   Backing Up:
+   FROM: bweight/scratch/* 
+     TO: Braden_Box:Huo_Lab/Braden_Weight/scratch/
+   Syncing only files smaller than 5M
+

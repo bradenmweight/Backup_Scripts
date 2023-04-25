@@ -13,13 +13,15 @@ module load rclone
 
 export MAX_SIZE=5  # in {SIZE_UNITS} -- input as integer
 export SIZE_UNITS="M" # "M"  (for MB) or "G" (for GB)
+export RCLONE_VERBOSE=1 # 1 for verbose, 2 for very verbose, do not export variable for non-verbose
+
 
 echo "" >> backup_log.txt
 echo $(date) >> backup_log.txt
-echo "   Backing Up:" >> backup_log.txt
+echo " Backing Up Filesystem:" >> backup_log.txt
 echo "   FROM: bweight/scratch/* " >> backup_log.txt
 echo "     TO: Braden_Box:Huo_Lab/Braden_Weight/scratch/" >> backup_log.txt
-echo "   Syncing only files smaller than ${MAX_SIZE}${SIZE_UNITS}" >> backup_log.txt
+echo "  Modifiers: Only syncing files smaller than ${MAX_SIZE}${SIZE_UNITS}" >> backup_log.txt
 echo "" >> backup_log.txt
 
 rclone sync /scratch/bweight/ Braden_Box:Huo_Lab/Braden_Weight/scratch/ --max-size ${MAX_SIZE}${SIZE_UNITS} --exclude-from exclude.txt
