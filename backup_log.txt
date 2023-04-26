@@ -1,7 +1,20 @@
 
-Tue Apr 25 18:36:00 EDT 2023
-   Backing Up:
+Tue Apr 25 19:23:38 EDT 2023
+ Backing Up Filesystem:
    FROM: bweight/scratch/* 
      TO: Braden_Box:Huo_Lab/Braden_Weight/scratch/
-   Syncing only files smaller than 5M
+ Modifiers: 
+   Only syncing files smaller than 5MB
+   Using 12 file transfer processes
+   Using 12 file checking processes
+
+
+Tue Apr 25 21:04:10 EDT 2023
+ Backing Up Filesystem:
+   FROM: bweight/scratch/* 
+     TO: Braden_Box:Huo_Lab/Braden_Weight/scratch/
+ Modifiers: 
+   Only syncing files smaller than 5MB
+   Using 18 file transfer processes
+   Using 18 file checking processes
 
