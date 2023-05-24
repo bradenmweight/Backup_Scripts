@@ -4,3 +4,9 @@ tmp/
 Gau*
 *chk
 *npy
+temp/
+*.out
+traj-*/
+job*/
+step*/
+test*/

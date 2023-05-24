@@ -5,6 +5,7 @@ https://rclone.org/box/
 
 To modify/initialize/control your rclone remote sites:
 ```
+$ module load rclone
 $ rclone config
 ```
 
@@ -52,7 +53,7 @@ y/e/d> y
 1. To list directories -- \
 ```$ rclone lsd Braden_Box:```
 
-2. To list all file -- \
+2. To list all files -- \
 ```$ rclone ls Braden_Box:```
 
 3. To copy from BlueHive to Box -- \
@@ -61,7 +62,7 @@ y/e/d> y
 4. To sync from BlueHive to Box -- \
 ```$ rclone sync /path/to/local/files/* Braden_Box:path/to/Box/location/``` 
 
-5. To sync from BlueHive to Box (only keeping file sunder 5 MB) -- \
+5. To sync from BlueHive/scratch to Box (only keeping files sunder 5 MB) -- \
 ```rclone sync /scratch/bweight/ Braden_Box:Huo_Lab/Braden_Weight/scratch/ --max-size 5M```
 
 ## Submitting a sync job to the cluster via SLURM
